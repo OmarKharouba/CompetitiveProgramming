@@ -1,5 +1,14 @@
 package PKU;
 
+/*for each qery of the type A Y, we need to find a number in the set which has the least remainder when divided by Y,
+ * which is min(X%Y) for each X in the set, we can find the answer by finding the min number in the intervals
+ * [0-Y[ , [Y-2*y[ , [2*Y-3*y[ and so on, then getting the best of these solutions
+ *  assume that Y is always greater than 1000, then the number of these intervals is less than 1000 and can do this operation
+ *  in every query, but when Y is small (say Y=1) the number of intervals is 10^6,
+ *  so we can handle small numbers separately by building an ans array for them and update it with each insertion
+ * 
+ */
+
 import java.io.*;
 import java.util.*;
 public class PKU3145 {
