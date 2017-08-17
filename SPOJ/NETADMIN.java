@@ -4,6 +4,16 @@ import java.io.*;
 import java.util.*;
 
 public class NETADMIN {
+
+	/*
+	we need to find the minimum number of cables colors to connect all houses that need internet to the admin's house,
+	we have only a single source for internet which is the admin's house (Node 1) and many destinations,
+	and we we want every house of them to be connnected to the internet, if we model the probrlem as a maxflow problrm,
+	with Node 1 as the only source, and houses that need internet as sinks, then what we are looking for is the minimum number 
+	of colors that we start with in Node 1, such that the maxFlow value is equal to K which means that every house is connected.
+	it is clear that if this can done with X colors, then it can be done with a larger number, so we can binary search the 
+	start number of colors from Node 1 and check if this number of colors is enough
+	*/
 	public static void main(String[] args) throws Throwable {
 		MyScanner sc = new MyScanner();
 		PrintWriter pw = new PrintWriter(System.out);
