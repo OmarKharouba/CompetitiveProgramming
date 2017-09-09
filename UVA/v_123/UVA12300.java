@@ -6,9 +6,10 @@ import java.util.*;
 public class UVA12300 {
 
 	/*
-	 * dis -> the distance between the two points of the input ang -> the angle
-	 * between two sides of a regular polygon with N sides s -> the side length
-	 * of the polygon area() function returns the polygon area given the number
+	 * dis -> the distance between the two points of the input 
+	 * ang -> the angle between two sides of a regular polygon with N sides 
+	 * s -> the side length of the polygon 
+	 * area() function returns the polygon area given the number
 	 * of sides and the side length 
 	 * ==================================== 
 	 * -in case N is even :-
