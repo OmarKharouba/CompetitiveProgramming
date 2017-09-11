@@ -29,6 +29,8 @@ public class UVA12300 {
 	 * s=2*hypot*Sin(x)
 	 * 
 	 * -in case N=3, it is just an Equilateral triangle with side length=the distance between the two points
+	 *	
+	 * an Image to make the solution clear => https://github.com/OmarKharouba/CompetitiveProgramming/blob/master/UVA/v_123/UVA12300.png 
 	 */
 
 	public static void main(String[] args) throws Throwable {
